@@ -1,0 +1,84 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WebApplication1.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            width: 369px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <!-- Content can be added here directly -->
+            <table class="auto-style1">
+                <tr>
+                    <td class="auto-style2" rowspan="5">
+                        <asp:Image ID="Image1" runat="server" Height="229px" ImageUrl="~/1111.jpg" Width="228px" />
+                    </td>
+                    <td rowspan="5">Строительный магазин &quot;СтройУют&quot;</td>
+                    <td>
+                        <asp:Label ID="Label1" runat="server" Text="Имя пользователя"></asp:Label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                        
+                        
+                        
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:Label ID="Label2" runat="server" Text="Пароль"></asp:Label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:Button ID="Button1" runat="server" Text="Вход" OnClick="Button1_Click" />
+                        <asp:Button ID="Button2" runat="server" Text="Регистрация" OnClick="Button2_Click" />
+                        <asp:Button ID="Button3" runat="server" OnClick="Button3_Click" Text="Выход" Width="83px" />
+                        <asp:Label ID="Label3" runat="server" Text="Label"></asp:Label>
+                        <asp:Label ID="Label4" runat="server" Text="Label"></asp:Label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style2"><a href="javascript:__doPostBack('ctl00$LinkButton1','')"><asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click"> Главная</asp:LinkButton></a></td>
+                    <td rowspan="4">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </td>
+                    <td rowspan="4"></td>
+                </tr>
+                <tr>
+                    <td class="auto-style2"><a href="javascript:__doPostBack('ctl00$LinkButton2','')"><asp:LinkButton ID="LinkButton2" runat="server" OnClick="LinkButton2_Click">Новости</asp:LinkButton></a></td>
+                </tr>
+                <tr>
+                    <td class="auto-style2"><a href="javascript:__doPostBack('ctl00$LinkButton4','')"><asp:LinkButton ID="LinkButton4" runat="server" OnClick="LinkButton4_Click">Подробный поиск</asp:LinkButton></a></td>
+                </tr>
+                <tr>
+                    <td class="auto-style2"><a href="javascript:__doPostBack('ctl00$LinkButton3','')"><asp:LinkButton ID="LinkButton3" runat="server" OnClick="LinkButton3_Click">Поиск</asp:LinkButton></a></td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">&nbsp;</td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>
